@@ -47,6 +47,7 @@ namespace SampleBinaryClassification.ConsoleApp
         // You can change this code and create your own sample data here (Hardcoded or from any source)
         private static ModelInput CreateSingleDataSample(MLContext mlContext, string dataFilePath)
         {
+            /*
             // Read dataset to get a single row for trying a prediction          
             IDataView dataView = mlContext.Data.LoadFromTextFile<ModelInput>(
                                             path: dataFilePath,
@@ -56,8 +57,11 @@ namespace SampleBinaryClassification.ConsoleApp
                                             allowSparse: false);
 
             // Here (ModelInput object) you could provide new test data, hardcoded or from the end-user application, instead of the row from the file.
-            ModelInput sampleForPrediction = mlContext.Data.CreateEnumerable<ModelInput>(dataView, false)
-                                                                        .First();
+            ModelInput sampleForPrediction = mlContext.Data.CreateEnumerable<ModelInput>(dataView, false).First();
+            */
+            
+            var sampleForPrediction = new ModelInput() { Col0 = "Loving ML!", Label = true };
+            
             return sampleForPrediction;
         }
 
