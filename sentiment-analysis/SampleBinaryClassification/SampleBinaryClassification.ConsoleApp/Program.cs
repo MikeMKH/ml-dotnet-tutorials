@@ -19,7 +19,7 @@ namespace SampleBinaryClassification.ConsoleApp
         private const string MODEL_FILEPATH = @"MLModel.zip";
 
         //Dataset to use for predictions 
-        private const string DATA_FILEPATH = @"/Users/mike/Kata/ml-dotnet-tutorials/sentiment-analysis/yelp_labelled.txt";
+        private const string DATA_FILEPATH = @"../test_labelled.txt";
 
         static void Main(string[] args)
         {
